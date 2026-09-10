@@ -81,6 +81,9 @@ class employeemanager():
         self.cursor.execute(query, values)
         record = self.cursor.fetchone()
         return record
+    def select(self):
+        self.cursor=self.connection.cursor()
+        pass
 
 
 employee_instance = employeemanager()
